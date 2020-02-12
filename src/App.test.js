@@ -1,9 +1,9 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import React from 'react'
+import * as rtl from '@testing-library/react'
+// don't forget to import the components you want to test!
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+test('sanity test', () => {
+  const wrapper = rtl.render(<span>Hello, World</span>)
+  const greeting = wrapper.queryByText(/hello, world/i)
+  expect(greeting).toBeInTheDocument()
+})
