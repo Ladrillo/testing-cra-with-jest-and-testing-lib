@@ -13,7 +13,7 @@ it('sanity check', () => {
 })
 
 // use describe blocks to organize tests
-// entirely optional
+// entirely optional, don't go crazy with the nesting
 describe('helpers module', () => {
   describe('five function', () => {
     it('returns five', () => {
