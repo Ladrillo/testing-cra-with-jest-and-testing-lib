@@ -37,9 +37,10 @@ describe('helpers module', () => {
     })
   })
 
-  describe('sum', () => {
+  describe('sum function', () => {
     it('is able to add up two numbers', () => {
-      // ?
+      expect(help.sum(1, 2)).toBe(3)
+      expect(help.sum(2, 2)).toBe(4)
     })
   })
 })
