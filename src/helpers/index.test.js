@@ -4,8 +4,8 @@ import * as help from './index'
 // TESTS TEST A SINGLE THING
 // make a good test message
 it('sanity check', () => {
-  // a single test can have if needed, multiple assertions
-  // all assertions are, testing "the same thing"
+  // a single test can have, if needed, multiple assertions
+  // all assertions should be testing "the same thing"
   expect(7).toBe(7)
   expect(7).toBeGreaterThan(6)
   expect(7).not.toBe(8)
