@@ -23,7 +23,7 @@ test('sanity test', () => {
 
 describe('App', () => {
   it('renders an element that reads have fun', () => {
-    // 1- setup, render app to the virtual dom
+    // 1- setup, render component to the virtual dom
     const wrapper = rtl.render(<App friend={{ name: 'Zac' }} />)
     // 2- capture the element of interest
     const elementWithHaveFun = wrapper.queryByText(/have fun/i)
