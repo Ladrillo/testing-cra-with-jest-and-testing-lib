@@ -26,13 +26,13 @@ describe('helpers module', () => {
     it('returns a value that is defined', () => {
       expect(help.five()).not.toBeUndefined()
     })
-    it('returs a value greater than 4', () => {
+    it('returns a value greater than 4', () => {
       expect(help.five()).toBeGreaterThan(4)
     })
-    it('returs a value not NaN', () => {
+    it('returns a value not NaN', () => {
       expect(help.five()).not.toBeNaN()
     })
-    it('returs a value smaller than 6', () => {
+    it('returns a value smaller than 6', () => {
       expect(help.five()).toBeLessThan(6)
     })
   })
