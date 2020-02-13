@@ -1,18 +1,26 @@
 // don't forget to import the functions you want to test!
 import * as help from './index'
 
-// this is a test
+// TESTS TEST A SINGLE THING
+// make a good test message
 it('sanity check', () => {
-  // assertions
+  // a single test can have if needed, multiple assertions
+  // all assertions are, testing "the same thing"
   expect(7).toBe(7)
   expect(7).toBeGreaterThan(6)
   expect(7).not.toBe(8)
   expect(7).not.toBeUndefined()
 })
 
+// use describe blocks to organize tests
+// entirely optional
 describe('helpers module', () => {
   describe('five function', () => {
     it('returns five', () => {
+      // unit tests test the smaller units of the program
+      // usually functions and classes
+      // make sure the function or method returns the expected thing,
+      // given certain arguments
       expect(help.five()).toBe(5) // toEqual with [] {}
     })
     it('returns a value that is defined', () => {
