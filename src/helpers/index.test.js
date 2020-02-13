@@ -38,9 +38,14 @@ describe('helpers module', () => {
   })
 
   describe('sum function', () => {
-    it('is able to add up two numbers', () => {
+    it('is able to add up two positive numbers', () => {
       expect(help.sum(1, 2)).toBe(3)
       expect(help.sum(2, 2)).toBe(4)
+    })
+    it('is able to handle negative numbers', () => {
+      expect(help.sum(-1, 1)).toBe(0)
+      expect(help.sum(-1, 2)).toBe(1)
+      expect(help.sum(-1, -1)).toBe(-2)
     })
   })
 })
