@@ -17,9 +17,9 @@ it('sanity check', () => {
 describe('helpers module', () => {
   describe('five function', () => {
     it('returns five', () => {
-      // unit tests test the smaller units of the program
-      // usually functions and classes
-      // we want to test that the function or method returns the expected,
+      // unit tests test the smaller units of the program in isolation
+      // (usually functions and classes)
+      // we want to test that the function or method returns the expected value,
       // given certain arguments
       expect(help.five()).toBe(5) // toEqual with [] {}
     })
