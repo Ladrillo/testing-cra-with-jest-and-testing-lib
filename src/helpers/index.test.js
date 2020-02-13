@@ -19,7 +19,7 @@ describe('helpers module', () => {
     it('returns five', () => {
       // unit tests test the smaller units of the program
       // usually functions and classes
-      // make sure the function or method returns the expected thing,
+      // we want to test that the function or method returns the expected,
       // given certain arguments
       expect(help.five()).toBe(5) // toEqual with [] {}
     })
