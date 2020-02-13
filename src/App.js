@@ -7,9 +7,18 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <p>Edit <code>src/App.js</code> and save to reload.</p>
+
+        <button>Have fun</button>
+
+        <label htmlFor="username-input">Username</label>
+        <input id="username-input" />
+
+        <section aria-labelledby="section-one-header">
+          <h3 id="section-one-header">Section One</h3>
+          <p>some content</p>
+        </section>
+
         <a
           className="App-link"
           href="https://reactjs.org"
