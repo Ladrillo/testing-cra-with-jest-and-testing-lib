@@ -3,6 +3,13 @@ export function five() {
 }
 
 export function sum(a, b) {
+  // what should I do to pass the test???
+  if (
+    typeof a !== 'number' ||
+    typeof b !== 'number'
+  ) {
+    return null
+  }
   return a + b
 }
 
