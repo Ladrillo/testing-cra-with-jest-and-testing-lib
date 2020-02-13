@@ -36,4 +36,10 @@ describe('helpers module', () => {
       expect(help.five()).toBeLessThan(6)
     })
   })
+
+  describe('sum', () => {
+    it('is able to add up two numbers', () => {
+      // ?
+    })
+  })
 })
