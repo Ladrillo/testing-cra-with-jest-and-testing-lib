@@ -58,4 +58,19 @@ describe('helpers module', () => {
       expect(help.sum(NaN, 5)).toBe(null)
     })
   })
+
+  describe('car constructor', () => {
+    it('initializes with an empty tank', () => {
+      // setup
+      const prius = new help.Car('Prius', 50)
+      expect(prius.tank).toBe(0)
+    })
+    it('can fill up the tank', () => {
+      // setup
+      const focus = new help.Car('Focus', 50)
+      focus.fill(10)
+      // assertion
+      expect(focus.tank).toBe(10)
+    })
+  })
 })
