@@ -47,5 +47,9 @@ describe('helpers module', () => {
       expect(help.sum(-1, 2)).toBe(1)
       expect(help.sum(-1, -1)).toBe(-2)
     })
+    it('returns null if one or both args are not numbers', () => {
+      // Product person wants this behavior!!
+      expect(help.sum('1', 1)).toBe(null)
+    })
   })
 })
