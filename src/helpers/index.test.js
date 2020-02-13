@@ -1,7 +1,7 @@
 // don't forget to import the functions you want to test!
 import * as help from './index'
 
-// TESTS TEST A SINGLE THING
+// EACH TEST TESTS A SINGLE THING <- IMPORTANT
 // make a good test message
 it('sanity check', () => {
   // a single test can have, if needed, multiple assertions
