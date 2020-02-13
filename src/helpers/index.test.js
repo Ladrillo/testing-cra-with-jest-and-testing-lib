@@ -52,7 +52,10 @@ describe('helpers module', () => {
       expect(help.sum('1', 1)).toBe(null)
       expect(help.sum('1', null)).toBe(null)
       expect(help.sum(1)).toBe(null)
+    })
+    it('can handle NaN args and return null', () => {
       expect(help.sum(1, NaN)).toBe(null)
+      expect(help.sum(NaN, 5)).toBe(null)
     })
   })
 })
